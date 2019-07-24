@@ -9,6 +9,7 @@ import gestionbasedatos.interfaces.LoginBD;
 import gestionbasedatos.interfaces.SplashScreen;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import com.sun.imageio.plugins.jpeg.JPEG;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -23,11 +24,11 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        try{
+        /*try{
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }catch(ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e){
             System.err.println("Error Look GUI: "+e.getMessage());
-        }
+        }*/
         SplashScreen s=new SplashScreen();
         s.setVisible(true);
         try {
@@ -43,7 +44,6 @@ public class Principal {
                 LoginBD nuevaSesion = new LoginBD();
                 nuevaSesion.setVisible(true);
             }
-        });        
+        });
     }
-    
 }

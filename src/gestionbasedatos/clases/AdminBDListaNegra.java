@@ -38,7 +38,7 @@ public class AdminBDListaNegra {
     private String contrasena;
     private String bd;
     
-    ConexionBD conectarBD= new ConexionBD("com.mysql.jdbc.Driver", "jdbc:mysql", "127.0.0.1:3306", "bdlistanegra", "root", "passjsjsjsjsjsjsjsjsjsjsjsjsjsjssjsjjssjjsjsjsjsjsjsjsjsjsjsjjssjjsjjsjsjsjsjs");
+    ConexionBD conectarBD= new ConexionBD("com.mysql.jdbc.Driver", "jdbc:mysql", "127.0.0.1:3306", "bdlistanegra", "root", "KJota23/1992");
 
     public ConexionBD getConectarBD() {
         return conectarBD;

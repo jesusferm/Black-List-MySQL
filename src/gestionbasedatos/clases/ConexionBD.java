@@ -101,7 +101,7 @@ public class ConexionBD {
         boolean conectado = false;
         try {
            Class.forName(driver).newInstance();
-           conexion = DriverManager.getConnection(protocolo+"://" + servidor + "/" + bd, usuario, contrasena);
+           conexion = DriverManager.getConnection(protocolo+"://" + servidor + "/" + bd + "?autoReconnect=true&useSSL=false", usuario, contrasena);
            conectado=true;
            System.out.println("Clase conexión: conexión exitosa");
            sentencia=conexion.createStatement();
